@@ -1,0 +1,27 @@
+body {
+    color: #fff;
+    background: #181A1B;
+    margin: 1em auto;
+    padding: 1em;
+    max-width: 50em;
+    font: 14px monospace;
+}
+
+footer {
+    clear: both;
+    margin-top: 2em;
+}
+
+a {
+    color: #6c6;
+    text-decoration: none;
+}
+
+a:hover,
+.active-page {
+    color: #c6c;
+}
+
+nav {
+    font-size: 17px;
+}
