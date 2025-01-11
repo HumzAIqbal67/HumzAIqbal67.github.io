@@ -1,71 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <title>Humza A. Iqbal</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script>
-        MathJax = {
-          tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']]
-          }
-        };
-    </script>
-    <script id="MathJax-script" async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
     <header>
         <nav>
-            <a href="./" class="active-page">Home</a> | <a href="./prjs">Projects & Reports</a> | <a href="./about">About</a> | <a href="./contact">Contact</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="projects.html">Projects & Research</a>
+            <a href="misc.html">Miscellaneous</a>
         </nav>
     </header>
-    <h1>Humza Iqbal's Webpage</h1>
-    <h2>Recent projects</h2>
-    <ul> <!--Change dates and names-->
-        <li>2023/05/28 – <a href="https://github.com/HumzAIqbal67/HumzAIqbal67.github.io-UnetSegmentation">Cell Segmentation</a> (Code & Report)</li>
-        <li>2023/05/11 – <a href="https://github.com/chanuth11/RC-Autopilot-Plane">RC-Autopilot-Plane</a> (Hard and soft)</li>
-        <li>2023/05/10 – <a href="https://github.com/HumzAIqbal67/HealthHarbor"> Pharma Application</a> (App)</li>
-        <li>2023/05/07 – <a href="https://github.com/HumzAIqbal67/PolyRegression">Regression</a> (Report)</li>
-    </ul>
-    <h2>Recent posts</h2>
-    <ul>
-        <li>2023/02/28 – <a href="https://humzaiqbal67.github.io/HumzAIqbal67.github.io-UnetSegmentation/Unet_Segmentation.pdf">Report for seg</a></li>
-        <li>2022/05/18 – <a href="https://github.com/HumzAIqbal67/PolyRegression">Poly</a></li>
-    </ul>
-
-    <h1>Projects</h1>
-
-    <table id="list">
-    <thead><tr><th style="width:25%">Name&nbsp;</th><th style="width:55%">Description&nbsp;</th><th style="width:20%">stuff&nbsp;</th></tr></thead>
-    <tbody>
-    <tr><td class="link"><a href="./">Parent directory/</a></td></tr>
-    <tr><td class="link"><a href="" title="audio">audio/</a></td><td>Audiobook Recordings</td></tr>
-    <tr><td class="link"><a href="" title="video">video/</a></td><td>My YouTube Channel</td></tr>
-    <tr><td class="link"><a href="" title="research">research/</a></td><td>Published Research Papers</td></tr>
-    <tr><td class="link"><a href="" title="sneedacity">sneedacity/</a></td><td>Old Sneedacity Site</td></tr>
-    <tr><td class="link"><a href="" title="data">data/</a></td><td>Data</td></tr>
-    </tbody>
-    </table>
-
-    <p>
-        When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
-    </p>
-
-    <span style="display:block">
-        $$\text{MSE} = \text{Var} + \text{Bias}^2 + \text{Bayes Error}$$
-        Variance and Bias are variable, but the bayes error is irreducible. 
-        Principle of [Occam's Razor](https://en.wikipedia.org/wiki/Occam%27s_razor) Among all models that describe the nature equally-well, the simplest model should be chosen.
-    </span>
-
+    <main>
+        <section id="intro">
+            <img src="profile.jpg" alt="Humza Iqbal">
+            <p>Short introduction about Humza Iqbal...</p>
+            <div class="links">
+                <a href="https://github.com/HumzAIqbal67"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://linkedin.com/in/HumzAIqbal67"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+        </section>
+        <section id="highlighted-research">
+            <h2>Highlighted Research</h2>
+            <div class="projects">
+                <article>
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                    <p>Description of the project...</p>
+                </article>
+                <article>
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>Description of the project...</p>
+                </article>
+                <article>
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project Title 3</h3>
+                    <p>Description of the project...</p>
+                </article>
+            </div>
+        </section>
+    </main>
     <footer>
-        footer link to git and linkden
+        <a href="https://github.com/HumzAIqbal67">GitHub</a> |
+        <a href="https://linkedin.com/in/HumzAIqbal67">LinkedIn</a>
     </footer>
 </body>
-
 </html>
