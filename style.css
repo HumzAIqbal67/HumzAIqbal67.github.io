@@ -32,7 +32,7 @@ footer {
 a {
     color: #66cc66;
     text-decoration: none;
-    margin: 0 10px; /* Adds horizontal spacing between links */
+    margin: 0 12px; /* Adds horizontal spacing between links */
 }
 
 a:hover,
