@@ -1,28 +1,75 @@
 body {
     color: #fff;
     background: #12161a;
-    margin: 1em auto;
+    margin: 0 auto; /* Aligns content centrally with no top margin */
     padding: 1em;
     max-width: 50em;
     font: 14px monospace;
 }
 
+header nav {
+    display: flex;
+    justify-content: center; /* Centers navigation links */
+    margin-bottom: 1em; /* Adds bottom margin for spacing */
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers content vertically */
+    flex-direction: column; /* Stacks children vertically */
+    width: 100%; /* Uses full available width */
+    margin-top: 1em; /* Adds top margin for spacing */
+    margin-bottom: 1em; /* Adds top margin for spacing */
+}
+
 footer {
     clear: both;
     margin-top: 2em;
+    text-align: center;
 }
 
 a {
-    color: #6c6;
+    color: #66cc66;
     text-decoration: none;
+    margin: 0 10px; /* Adds horizontal spacing between links */
 }
-
 
 a:hover,
 .active-page {
-    color: #c6c;
+    color: #cc66cc;
 }
 
 nav {
     font-size: 17px;
+}
+
+.icon-container {
+    padding: 10px;
+}
+
+
+.circle-image {
+    border-radius: 50%;  /* Makes the image round */
+    width: 100px;        /* Sets the width of the image */
+    height: 100px;       /* Sets the height of the image */
+}
+
+#intro {
+    text-align: center; /* Centers text within the intro section */
+    padding: 20px 0; /* Adds padding for spacing */
+}
+
+.projects article {
+    margin-bottom: 20px; /* Adds bottom margin for spacing between projects */
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0.5em;
+        font-size: 12px;
+    }
+    nav {
+        font-size: 15px;
+    }
 }
