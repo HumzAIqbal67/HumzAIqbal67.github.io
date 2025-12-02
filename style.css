@@ -3,7 +3,7 @@ body {
     background: #12161a;
     margin: 0 auto; /* Aligns content centrally with no top margin */
     padding: 1em;
-    max-width: 50em;
+    max-width: 70em;
     font: 14px monospace;
 }
 
@@ -89,7 +89,7 @@ nav {
     border-radius: 14px;
   }
   
-  /* ✅ fixed-size, consistent images */
+  /* fixed-size, consistent images */
   .highlight-img {
     width: 260px;          /* make smaller: try 220px or 200px */
     height: 160px;         /* keeps them uniform */
@@ -133,11 +133,14 @@ nav {
   }
   
   #highlighted-research .highlight-img {
-    width: 180px !important;   /* MUCH smaller (try 160–220) */
-    height: 120px !important;  /* consistent height */
-    flex: 0 0 180px !important;
-    max-width: 180px !important;
-    object-fit: cover;
+    width: 260px !important;   /* MUCH smaller (try 160–220) */
+    height: 170px !important;  /* consistent height */
+    flex: 0 0 260px !important;
+    max-width: 260px !important;
+    object-fit: contain !important;     /* no cropping */
+    background: #0e1216;               /* letterbox background */
+    padding: 6px;                       /* small breathing room */
+    border-radius: 12px;
   }
   
   /* keep text from squeezing weirdly */
