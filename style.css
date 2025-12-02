@@ -73,3 +73,56 @@ nav {
         font-size: 15px;
     }
 }
+
+/* Highlighted Research layout (image left, text right) */
+.highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .highlight-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  
+    /* optional: makes it feel like a “card” without being loud */
+    padding: 14px;
+    border-radius: 14px;
+  }
+  
+  .highlight-img {
+    width: 48%;           /* ~half the column */
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .highlight-text {
+    width: 52%;
+  }
+  
+  .highlight-text h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  
+  .highlight-text p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  /* Mobile: stack image above text */
+  @media (max-width: 800px) {
+    .highlight-card {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .highlight-img,
+    .highlight-text {
+      width: 100%;
+    }
+  }
+  

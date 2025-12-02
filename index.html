@@ -39,45 +39,46 @@
         </section>
         <section id="highlighted-research">
             <h2>Highlighted Research</h2>
-
-            <div class="projects">
-                <article>
-                    <!-- Replace src with your image path, e.g. assets/img/ecg_foundation.jpg -->
-                    <img src="assets/images/ecg_foundation.png" alt="ECG foundation model">
-                    <h3>ECG Foundation Model (UOHI)</h3>
-                    <p>
-                        Developing large-scale ECG representation learning to improve generalization across hospitals.
-                        The focus is on careful evaluation, avoiding leakage, and measuring transfer gains on clinically
-                        relevant downstream tasks—especially where labels are limited or inconsistent.
-                    </p>
-                </article>
-
-                <article>
-                    <!-- Replace src with your image path, e.g. assets/img/fast_em.jpg -->
-                    <img src="assets/images/fast_em.png" alt="Fast SEM imaging with selective re-imaging">
-                    <h3>Fast SEM Imaging (Selective Re-imaging)</h3>
-                    <p>
-                        Designed a hybrid strategy that uses fast low-resolution scans plus learning-based enhancement and
-                        targeted re-imaging only where needed. This reframes imaging as a resource-allocation problem: spend
-                        high-resolution time where it actually changes downstream results.
-                        <a href="assets/documents/ecg_poster.pdf" target="_blank" rel="noopener">Poster (PDF)</a>
-                    </p>
-                    
-                </article>
-
-                <article>
-                    <!-- Replace src with your image path, e.g. assets/img/auto_imaging.jpg -->
-                    <img src="assets/images/auto_imaging.png" alt="Automated SEM imaging pipeline">
-                    <h3>Automated SEM Imaging Pipeline (SickKids NBIF)</h3>
-                    <p>
-                        Built an automation pipeline that reduces tedious microscope interaction during long acquisition runs.
-                        The system helps keep imaging consistent across many sections and saves researchers substantial time by
-                        streamlining repeated selection and monitoring steps.
-                    </p>
-                </article>
+          
+            <div class="highlights">
+              <article class="highlight-card">
+                <img class="highlight-img" src="assets/img/auto_imaging.jpg" alt="Automated SEM imaging pipeline">
+                <div class="highlight-text">
+                  <h3>Automated SEM Imaging Pipeline (SickKids NBIF)</h3>
+                  <p>
+                    Built an automation pipeline that reduces tedious microscope interaction during long acquisition runs.
+                    The system helps keep imaging consistent across many sections and saves researchers substantial time by
+                    streamlining repeated selection and monitoring steps.
+                  </p>
+                </div>
+              </article>
+          
+              <article class="highlight-card">
+                <img class="highlight-img" src="assets/img/ecg_foundation.jpg" alt="ECG foundation model">
+                <div class="highlight-text">
+                  <h3>ECG Foundation Model (UOHI)</h3>
+                  <p>
+                    Developing large-scale ECG representation learning to improve generalization across hospitals.
+                    The focus is on careful evaluation, avoiding leakage, and measuring transfer gains on clinically
+                    relevant downstream tasks—especially where labels are limited or inconsistent.
+                  </p>
+                </div>
+              </article>
+          
+              <article class="highlight-card">
+                <img class="highlight-img" src="assets/img/fast_em.jpg" alt="Fast SEM imaging with selective re-imaging">
+                <div class="highlight-text">
+                  <h3>Fast SEM Imaging (Selective Re-imaging)</h3>
+                  <p>
+                    Designed a hybrid strategy that uses fast low-resolution scans plus learning-based enhancement and
+                    targeted re-imaging only where needed—so high-resolution time is spent where it actually changes
+                    downstream results.
+                  </p>
+                </div>
+              </article>
             </div>
         </section>
-    </main>
+              </main>
     <footer>
         <a href="https://www.youtube.com/watch?v=NBZVaNpwub8">Worlds Are Colliding!</a>
     </footer>
