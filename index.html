@@ -29,26 +29,51 @@
                     onmouseout="this.src='cv-icon-2048x1162-0l9ukd0s.png';"></a>
                 <a href="mailto:humza.iqbal@mail.utoronto.ca"><i class="fa-solid fa-envelope fa-2x"></i></a>            
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius fermentum mauris in condimentum. Suspendisse congue dolor sapien, vitae tempor velit consectetur in. Phasellus et quam et est semper iaculis. Aliquam pharetra finibus pellentesque. Donec pharetra velit ligula, vitae ultrices velit rhoncus eget. Aliquam congue porta urna, vitae mollis metus ultricies vitae. Aenean ullamcorper leo et magna dignissim efficitur. Ut enim justo, posuere consectetur leo vel, cursus dignissim tellus. Maecenas varius rutrum erat vehicula vehicula. Sed diam mauris, cursus et dui eu, lobortis condimentum nunc. Curabitur venenatis sit amet neque ac luctus. Vivamus massa felis, sodales et suscipit iaculis, laoreet non arcu. Aenean sit amet sapien ut urna egestas dictum. Aliquam finibus mi sed suscipit tincidunt. Suspendisse ut odio in sapien finibus finibus. Aliquam non augue sodales, volutpat dui nec, efficitur magna.
+            <p>
+                I’m an undergraduate at the University of Toronto (Computer Science and Statistics) working in
+                computational medicine and biomedical imaging. I’m interested in building machine learning systems that
+                hold up in the real world—across hospitals, across messy data, and under practical constraints.
+                Recently, my work has focused on large-scale ECG representation learning and on automation for serial-section
+                electron microscopy to make high-throughput imaging more reliable and less time-consuming
             </p>
         </section>
         <section id="highlighted-research">
             <h2>Highlighted Research</h2>
+
             <div class="projects">
                 <article>
-                    <img src="project1.jpg" alt="Project 1">
-                    <h3>Project Title 1</h3>
-                    <p>Description of the project...</p>
+                    <!-- Replace src with your image path, e.g. assets/img/ecg_foundation.jpg -->
+                    <img src="assets/images/ecg_foundation.png" alt="ECG foundation model">
+                    <h3>ECG Foundation Model (UOHI)</h3>
+                    <p>
+                        Developing large-scale ECG representation learning to improve generalization across hospitals.
+                        The focus is on careful evaluation, avoiding leakage, and measuring transfer gains on clinically
+                        relevant downstream tasks—especially where labels are limited or inconsistent.
+                    </p>
                 </article>
+
                 <article>
-                    <img src="project2.jpg" alt="Project 2">
-                    <h3>Project Title 2</h3>
-                    <p>Description of the project...</p>
+                    <!-- Replace src with your image path, e.g. assets/img/fast_em.jpg -->
+                    <img src="assets/images/fast_em.png" alt="Fast SEM imaging with selective re-imaging">
+                    <h3>Fast SEM Imaging (Selective Re-imaging)</h3>
+                    <p>
+                        Designed a hybrid strategy that uses fast low-resolution scans plus learning-based enhancement and
+                        targeted re-imaging only where needed. This reframes imaging as a resource-allocation problem: spend
+                        high-resolution time where it actually changes downstream results.
+                        <a href="assets/documents/ecg_poster.pdf" target="_blank" rel="noopener">Poster (PDF)</a>
+                    </p>
+                    
                 </article>
+
                 <article>
-                    <img src="project3.jpg" alt="Project 3">
-                    <h3>Project Title 3</h3>
-                    <p>Description of the project...</p>
+                    <!-- Replace src with your image path, e.g. assets/img/auto_imaging.jpg -->
+                    <img src="assets/images/auto_imaging.png" alt="Automated SEM imaging pipeline">
+                    <h3>Automated SEM Imaging Pipeline (SickKids NBIF)</h3>
+                    <p>
+                        Built an automation pipeline that reduces tedious microscope interaction during long acquisition runs.
+                        The system helps keep imaging consistent across many sections and saves researchers substantial time by
+                        streamlining repeated selection and monitoring steps.
+                    </p>
                 </article>
             </div>
         </section>
