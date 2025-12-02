@@ -158,6 +158,4 @@ nav {
     }
   }
 
-  /* Make sure nothing clips the image */
-#highlighted-research .highlight-card { overflow: visible !important; }
-#highlighted-research .highlight-img  { border-radius: 0 !important; object-fit: contain !important; }
+  
