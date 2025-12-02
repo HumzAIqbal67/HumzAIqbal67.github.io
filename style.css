@@ -127,3 +127,31 @@ nav {
     }
   }
   
+/* --- FORCE highlighted images to be small + consistent --- */
+#highlighted-research .highlight-card {
+    align-items: flex-start;   /* nicer alignment with longer text */
+  }
+  
+  #highlighted-research .highlight-img {
+    width: 180px !important;   /* MUCH smaller (try 160–220) */
+    height: 120px !important;  /* consistent height */
+    flex: 0 0 180px !important;
+    max-width: 180px !important;
+    object-fit: cover;
+  }
+  
+  /* keep text from squeezing weirdly */
+  #highlighted-research .highlight-text {
+    flex: 1 1 auto;
+  }
+  
+  /* mobile: still stack, but keep a reasonable image height */
+  @media (max-width: 800px) {
+    #highlighted-research .highlight-img {
+      width: 100% !important;
+      max-width: 100% !important;
+      flex: none !important;
+      height: 180px !important;
+    }
+  }
+  
